@@ -136,3 +136,21 @@ try:
 
 except ValueError:
     print("Invalid Input! Please run the program again and type a whole number (e.g., 50).")
+
+# Reversing a string using stack
+stack = []
+
+# Input
+string = input("Enter a string: ")
+
+# 1. Push 
+for char in string:
+    stack.append(char)
+ 
+# 2. Pop 
+reversed_string = ""
+while stack:
+    popped_item = stack.pop()
+    reversed_string += popped_item
+
+print("The reversed string is:", reversed_string)
